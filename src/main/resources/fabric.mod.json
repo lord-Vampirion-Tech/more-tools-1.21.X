@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "more_tools",
+	"version": "${version}",
+	"name": "More Tools",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Zif_Tech!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.more_tools.MoreTools"
+		],
+		"fabric-datagen": [
+			"net.more_tools.MoreToolsDataGenerator"
+		]
+	},
+	"mixins": [
+		"more_tools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
